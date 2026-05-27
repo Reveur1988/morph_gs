@@ -1,0 +1,6 @@
+[submodule "MORPH"]
+	path = MORPH
+	url = git@github.com:Reveur1988/MORPH.git
+[submodule "freegsnke"]
+	path = freegsnke
+	url = git@github.com:Reveur1988/freegsnke.git

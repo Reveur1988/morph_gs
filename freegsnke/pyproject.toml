@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freegsnke"
+version = "3.0.1"
+authors = [
+    {name = "The FreeGSNKE Developers"}
+]
+description = "FreeGSNKE: A Python code for evolutive free-boundary tokamak plasma equilibrium simulations"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)"
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+packages = ["freegsnke"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies.dev =  { file = ["requirements-dev.txt"] }
+optional-dependencies.freegs4e = { file = ["requirements-freegs4e.txt"] }
+optional-dependencies.uda = { file = ["requirements-uda.txt"] }
+optional-dependencies.docs = { file = ["requirements-docs.txt"] }
+
+[project.urls]
+Homepage = "https://github.com/FusionComputingLab/freegsnke"

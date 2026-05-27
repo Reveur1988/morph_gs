@@ -1,0 +1,7 @@
+shots/
+.venv/
+__pycache__/
+*.py[codz]
+.git/
+MORPH/
+LATEX_MT/

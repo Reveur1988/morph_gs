@@ -1,0 +1,16 @@
+# ---Ignore datasets---
+datasets/
+
+# ---Ignore results---
+experiments/results/
+
+# ---Ignore specific results---
+experiments/heat/
+
+# ---Ignore models---
+models/
+
+# Ignore Python bytecode files
+**/__pycache__/
+*.py[cod]
+*$py.class
